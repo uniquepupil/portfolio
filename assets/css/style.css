@@ -1879,4 +1879,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+	
+}
+.resume-link {
+    color: #000; /* Initial color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.resume-link:hover {
+    color: #007BFF; /* Hover color */
+}
+
+.resume-link:active {
+    color: #FF5733; /* Color when clicked */
+}
+
+.resume-link i, .resume-link span {
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.resume-link:active i, .resume-link:active span {
+    color: #FF5733; /* Color of the icon and text when clicked */
 }
