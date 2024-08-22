@@ -1882,7 +1882,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 	
 }
 .resume-link {
-    color: #000; /* Initial color */
+    color: #FF0000; /* Initial color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
 }
