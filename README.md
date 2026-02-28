@@ -4,7 +4,7 @@ This is a fully responsive personal portfolio website, responsive for all device
 
 ## Demo
 
-https://uniquepupil.netlify.app/
+https://uniquepupil.in
 
 ## Prerequisites
 
