@@ -26,14 +26,14 @@ export async function POST(request: Request) {
       );
     }
 
-    const host = getEnv("SMTP_HOST");
+    const host = getEnv("SMTP_HOST") || "smtp.gmail.com";
     const port = Number(getEnv("SMTP_PORT") || "587");
     const user = getEnv("SMTP_USER");
     const pass = getEnv("SMTP_PASS");
-    const from = getEnv("CONTACT_FROM_EMAIL") || user;
-    const to = getEnv("CONTACT_TO_EMAIL") || user;
+    const from = user;
+    const to = [user, email].filter((value): value is string => Boolean(value));
 
-    if (!host || !user || !pass || !from || !to) {
+    if (!user || !pass || !from) {
       return NextResponse.json(
         { message: "Mail server is not configured. Add SMTP env vars first." },
         { status: 500 }
