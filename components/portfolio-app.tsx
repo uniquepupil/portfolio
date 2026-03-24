@@ -480,16 +480,6 @@ export function PortfolioApp() {
                     </div>
                   </form>
                 </section>
-
-                <section className="theme-border overflow-hidden rounded-[1.5rem] border">
-                  <iframe
-                    src={mapEmbed}
-                    className="theme-map h-[320px] w-full"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Parikshit location map"
-                  />
-                </section>
               </div>
             )}
           </div>
