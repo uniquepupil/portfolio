@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -39,8 +40,17 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Script id="theme-init" strategy="beforeInteractive">{`
+          try {
+            const stored = localStorage.getItem("theme");
+            const theme = stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+            document.documentElement.setAttribute("data-theme", theme);
+          } catch (e) {}
+        `}</Script>
+        {children}
+      </body>
     </html>
   );
 }
