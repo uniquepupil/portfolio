@@ -93,29 +93,7 @@ export function HomePage() {
         </div>
       </header>
 
-      <section className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="panel overflow-hidden rounded-[2rem] p-6 lg:p-8">
-          <div className="mb-8 flex flex-wrap items-center gap-3 text-sm theme-text-secondary">
-            <span className="rounded-full border border-[var(--border-strong)] px-3 py-1">
-              {profile.role}
-            </span>
-            <span className="rounded-full border border-[var(--border-strong)] px-3 py-1">
-              {profile.location}
-            </span>
-          </div>
-          <p className="max-w-2xl text-lg leading-8 theme-text-secondary sm:text-xl">
-            {profile.headline}
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {heroStats.map((stat) => (
-              <div key={stat.label} className="inset-panel rounded-[1.5rem] p-4">
-                <p className="text-3xl font-semibold theme-text-primary">{stat.value}</p>
-                <p className="mt-2 text-sm theme-text-muted">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
+      <section className="grid gap-5 md:grid-cols-[0.55fr_1.45fr]">
         <aside className="panel relative overflow-hidden rounded-[2rem] p-6 lg:p-8">
           <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[var(--accent)]/15 blur-3xl" />
           <div className="relative">
@@ -151,6 +129,28 @@ export function HomePage() {
             </div>
           </div>
         </aside>
+
+        <div className="panel overflow-hidden rounded-[2rem] p-6 lg:p-8">
+          <div className="mb-8 flex flex-wrap items-center gap-3 text-sm theme-text-secondary">
+            <span className="rounded-full border border-[var(--border-strong)] px-3 py-1">
+              {profile.role}
+            </span>
+            <span className="rounded-full border border-[var(--border-strong)] px-3 py-1">
+              {profile.location}
+            </span>
+          </div>
+          <p className="max-w-2xl text-lg leading-8 theme-text-secondary sm:text-xl">
+            {profile.headline}
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            {heroStats.map((stat) => (
+              <div key={stat.label} className="inset-panel rounded-[1.5rem] p-4">
+                <p className="text-3xl font-semibold theme-text-primary">{stat.value}</p>
+                <p className="mt-2 text-sm theme-text-muted">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="mt-5 grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
