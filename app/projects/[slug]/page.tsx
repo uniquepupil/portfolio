@@ -153,6 +153,33 @@ export default function ProjectPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {project.embedUrl && (
+        <section className="mt-5 panel rounded-[2rem] p-6 lg:p-8">
+          <div className="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.28em] theme-accent">Live preview</p>
+              <h2 className="mt-2 text-3xl font-semibold theme-text-primary">
+                Embedded site test
+              </h2>
+            </div>
+            <p className="max-w-xl text-sm leading-7 theme-text-muted">
+              This preview works only if the live site allows iframe embedding. If it is blocked,
+              use the live project button above.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-[1.5rem] border border-[var(--border-soft)]">
+            <iframe
+              src={project.embedUrl}
+              title={`${project.title} live preview`}
+              className="h-[720px] w-full bg-white"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </section>
+      )}
     </main>
   );
 }

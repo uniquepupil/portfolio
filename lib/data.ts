@@ -116,6 +116,7 @@ export type CaseStudy = {
   outcomes: string[];
   stack: string[];
   gallery: string[];
+  embedUrl?: string;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -131,6 +132,8 @@ export const caseStudies: CaseStudy[] = [
     duration: "4 weeks",
     image: "/assets/images/astra-resorts.png",
     href: "https://astraresorts.com",
+    embedUrl: "https://astraresorts.com",
+
     summary:
       "A premium hospitality site built around room discovery, event positioning, and direct booking intent.",
     sourceNote:
@@ -164,7 +167,8 @@ export const caseStudies: CaseStudy[] = [
     duration: "3 weeks",
     image: "/assets/images/pm.png",
     href: "https://www.paraglidingmantra.com",
-    summary:
+    embedUrl: "https://www.paraglidingmantra.com",
+        summary:
       "An adventure booking website designed to build trust quickly and move visitors toward inquiries and reservations.",
     sourceNote:
       "Project details are inferred from the live tourism website, existing portfolio image, and domain positioning.",
@@ -282,7 +286,8 @@ export const caseStudies: CaseStudy[] = [
       "A reusable design language for premium travel clients."
     ],
     stack: ["Next.js", "Visual design systems", "Responsive UI", "Hospitality UX"],
-    gallery: ["/assets/images/thepineparadise.webp", "/assets/images/eagleparadise.webp"]
+    gallery: ["/assets/images/thepineparadise.webp", "/assets/images/eagleparadise.webp"],
+    embedUrl: "https://thepineparadise.com"
   },
   {
     slug: "lakeside-mantra",
@@ -296,6 +301,7 @@ export const caseStudies: CaseStudy[] = [
     duration: "3 weeks",
     image: "/assets/images/lakesidemantra.webp",
     href: "https://lakesidemantra.in",
+    embedUrl: "https://lakesidemantra.in",
     summary:
       "A destination-led hospitality website centered on visual appeal, property browsing, and inquiry flow.",
     sourceNote:
@@ -329,6 +335,7 @@ export const caseStudies: CaseStudy[] = [
     duration: "Prototype",
     image: "/assets/images/codekhojo.png",
     href: "https://codekhojo.netlify.app/",
+    embedUrl: "https://codekhojo.netlify.app/",
     summary:
       "A utility-oriented application built around code discovery and developer-focused workflows.",
     sourceNote:
