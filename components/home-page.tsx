@@ -23,9 +23,91 @@ function cn(...values: Array<string | false | null | undefined>) {
   return values.filter(Boolean).join(" ");
 }
 
+function statGlyph(label: string) {
+  switch (label) {
+    case "Core mode":
+      return "rocket";
+    case "Primary stack":
+      return "code";
+    case "Focus":
+      return "eye";
+    case "Current role":
+      return "briefcase";
+    case "Build style":
+      return "edit";
+    case "Platforms":
+      return "layers";
+    case "Domains":
+      return "pin";
+    case "Projects shipped":
+      return "check";
+    default:
+      return "dot";
+  }
+}
+
+function Glyph({ kind }: { kind: string }) {
+  const className = "h-4 w-4";
+
+  switch (kind) {
+    case "rocket":
+      return <span className="text-base"></span>;
+    case "code":
+      return <span className="font-mono text-base theme-accent">{""}</span>;
+    case "eye":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      );
+    case "briefcase":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <path d="M9 6V4h6v2M4 8h16v10H4z" />
+          <path d="M4 12h16" />
+        </svg>
+      );
+    case "edit":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <path d="M3 17.25V21h3.75L18 9.75 14.25 6 3 17.25Z" />
+          <path d="m14.25 6 3.75 3.75" />
+        </svg>
+      );
+    case "layers":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <path d="m12 4 8 4-8 4-8-4 8-4Z" />
+          <path d="m4 12 8 4 8-4" />
+          <path d="m4 16 8 4 8-4" />
+        </svg>
+      );
+    case "pin":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <path d="M12 21s6-4.35 6-10a6 6 0 1 0-12 0c0 5.65 6 10 6 10Z" />
+          <circle cx="12" cy="11" r="2.5" />
+        </svg>
+      );
+    case "check":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="m8.5 12 2.5 2.5 4.5-5" />
+        </svg>
+      );
+    default:
+      return <span className="text-sm theme-accent">•</span>;
+  }
+}
+
 export function HomePage() {
   const whatsappLink = `https://wa.me/${profile.phone.replace(/\D/g, "")}`;
   const phoneLink = `tel:${profile.phone.replace(/\s+/g, "")}`;
+  const featuredStats = heroStats.slice(0, 3);
+  const snapshotStats = heroStats.slice(3, 6);
+  const supportingStats = heroStats.slice(6, 9);
   const [status, setStatus] = useState<ContactStatus>("idle");
   const [statusMessage, setStatusMessage] = useState("");
   const [formData, setFormData] = useState({
@@ -139,16 +221,98 @@ export function HomePage() {
               {profile.location}
             </span>
           </div>
-          <p className="max-w-2xl text-lg leading-8 theme-text-secondary sm:text-xl">
-            {profile.headline}
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {heroStats.map((stat) => (
-              <div key={stat.label} className="inset-panel rounded-[1.5rem] p-4">
-                <p className="text-3xl font-semibold theme-text-primary">{stat.value}</p>
-                <p className="mt-2 text-sm theme-text-muted">{stat.label}</p>
+          <div className="grid gap-6 xl:grid-cols-[1.18fr_0.82fr]">
+            <div>
+              <h2 className="max-w-3xl text-[2.15rem] font-semibold leading-[1.28] theme-text-primary lg:text-[3.2rem]">
+                {profile.headline}
+              </h2>
+             
+            </div>
+
+            <div className="inset-panel rounded-[1.7rem] p-6">
+              <p className="text-sm uppercase tracking-[0.34em] theme-accent">Snapshot</p>
+              <div className="mt-5 space-y-5">
+                {snapshotStats.map((stat, index) => (
+                  <div
+                    key={stat.label}
+                    className={cn(
+                      "flex items-start justify-between gap-4",
+                      index !== snapshotStats.length - 1 &&
+                        "border-b border-[var(--border-soft)] pb-5"
+                    )}
+                  >
+                    <div>
+                      <p className="text-[1.05rem] font-semibold leading-8 theme-text-primary">
+                        {stat.value}
+                      </p>
+                      <p className="mt-1 text-sm theme-text-muted">{stat.label}</p>
+                    </div>
+                    <div className="theme-accent mt-1 shrink-0">
+                      <Glyph kind={statGlyph(stat.label)} />
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-3 xl:grid-cols-[1.28fr_0.72fr]">
+            <div className="grid gap-3 sm:grid-cols-[0.82fr_0.82fr_1fr]">
+              {featuredStats.map((stat, index) => (
+                <div
+                  key={stat.label}
+                  className={cn(
+                    "relative flex min-h-[230px] flex-col justify-end overflow-hidden rounded-[1.7rem] p-5",
+                    index === 0 ? "theme-accent-bg" : "inset-panel"
+                  )}
+                >
+                  {index > 0 && (
+                    <div className="absolute right-5 top-5 theme-accent">
+                      <Glyph kind={statGlyph(stat.label)} />
+                    </div>
+                  )}
+                  <p
+                    className={cn(
+                      index === 2
+                        ? "max-w-[12rem] text-[1.15rem] font-semibold leading-[1.12] lg:text-[1.45rem]"
+                        : "text-[3rem] font-semibold leading-none",
+                      index === 0 ? "text-[var(--accent-contrast)]" : "theme-text-primary"
+                    )}
+                  >
+                    {stat.value}
+                  </p>
+                  <p
+                    className={cn(
+                      "mt-3 text-sm",
+                      index === 0 ? "text-[var(--accent-contrast)]/85" : "theme-text-muted"
+                    )}
+                  >
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+              {supportingStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="inset-panel flex min-h-[108px] items-start justify-between rounded-[1.45rem] p-5"
+                >
+                  <div>
+                    <p className="text-[1.05rem] font-semibold leading-8 theme-text-primary">
+                      {stat.value}
+                    </p>
+                    <p className="mt-4 text-xs uppercase tracking-[0.28em] theme-text-muted">
+                      {stat.label}
+                    </p>
+                  </div>
+                  <div className="theme-accent mt-1 shrink-0">
+                    <Glyph kind={statGlyph(stat.label)} />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -47,7 +47,7 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
     >
       <Icon theme={theme} />
-      {ready ? (theme === "dark" ? "Light mode" : "Dark mode") : "Theme"}
+      {ready ? (theme === "dark" ? "" : "") : "Theme"}
     </button>
   );
 }
