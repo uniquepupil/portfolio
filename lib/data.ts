@@ -26,7 +26,7 @@ export const heroStats = [
   { label: "Primary stack", value: "Next.js, Node.js" },
   { label: "Focus", value: "UX, performance, clarity" },
   { label: "Current role", value: "Associate Software Developer" },
-  { label: "Build style", value: "Design to deployment" },
+  // { label: "Build style", value: "Design to deployment" },
   { label: "Platforms", value: "Web, mobile, AI workflows" }
 ];
 
