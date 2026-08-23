@@ -324,6 +324,40 @@ export const caseStudies: CaseStudy[] = [
     gallery: ["/assets/images/lakesidemantra.webp"]
   },
   {
+    slug: "lonavala-interiors",
+    title: "Lonavala Interiors",
+    kicker: "Interior design lead-generation site",
+    category: "Business website",
+    role: "Full-stack developer",
+    year: "2026",
+    client: "The home dekor’s & Sk interior",
+    team: "Built independently",
+    duration: "Recent launch",
+    image: "/assets/images/lonavala-interiors.jpg",
+    href: "https://www.lonavalainteriors.com",
+    summary:
+      "A conversion-focused interior design website for villas, bungalows, apartments, and commercial spaces in Lonavala, Kamshet, and Maval.",
+    sourceNote:
+      "Content is based on the live site metadata and homepage positioning, including turnkey interiors, modular kitchens, 3D visualization, and Vastu-aware design services.",
+    headline:
+      "Built a local SEO-focused interiors website designed to rank, convert enquiries, and present premium residential and commercial design work clearly.",
+    challenge:
+      "The site needed to work as both a local discovery page and a trust-building sales surface. It had to cover search intent for interior design in Lonavala while still feeling premium and service-led.",
+    approach: [
+      "Structured the site around local SEO signals like Lonavala, Kamshet, and Maval while keeping the pages readable and client-facing.",
+      "Positioned the brand around turnkey interiors for villas, bungalows, farmhouses, apartments, and commercial spaces.",
+      "Used conversion-oriented sections for packages, services, portfolio, Vastu, and direct contact so users can quickly move from discovery to enquiry."
+    ],
+    outcomes: [
+      "Created a stronger organic-search surface for a location-based interior design business.",
+      "Improved clarity around service types, areas served, and premium turnkey delivery.",
+      "Gave the business a cleaner digital presence for both direct leads and future backlink growth."
+    ],
+    stack: ["Next.js", "SEO metadata", "Responsive UI", "Lead generation UX"],
+    gallery: ["/assets/images/lonavala-interiors.jpg"],
+    embedUrl: "https://www.lonavalainteriors.com"
+  },
+  {
     slug: "codekhojo",
     title: "CodeKhojo",
     kicker: "Developer utility app",
@@ -363,7 +397,8 @@ export const featuredSlugs = [
   "astra-resort-kasauli",
   "police-department-websites",
   "eco-stays-villa-booking",
-  "the-pine-paradise"
+  "the-pine-paradise",
+  "lonavala-interiors"
 ];
 
 export const featuredCaseStudies = caseStudies.filter((project) =>
