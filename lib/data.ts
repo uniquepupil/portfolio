@@ -158,9 +158,9 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "paragliding-mantra",
     title: "Paragliding Mantra",
-    kicker: "Adventure tourism funnel",
-    category: "Web experience",
-    role: "Frontend and growth-focused web developer",
+    kicker: "Adventure tourism SEO and booking funnel",
+    category: "Adventure tourism website",
+    role: "Frontend developer and growth-focused web developer",
     year: "2025",
     client: "Paragliding Mantra",
     team: "Freelance delivery",
@@ -168,26 +168,94 @@ export const caseStudies: CaseStudy[] = [
     image: "/assets/images/pm.png",
     href: "https://www.paraglidingmantra.com",
     embedUrl: "https://www.paraglidingmantra.com",
-        summary:
-      "An adventure booking website designed to build trust quickly and move visitors toward inquiries and reservations.",
+    summary:
+      "A dedicated adventure booking website for Paragliding Mantra, structured to support search visibility, trust building, and fast enquiry conversion.",
     sourceNote:
-      "Project details are inferred from the live tourism website, existing portfolio image, and domain positioning.",
+      "Project details are based on the live Paragliding Mantra website, existing portfolio image, and adventure tourism positioning.",
     headline:
-      "Turned an activity website into a clearer booking-oriented experience for paragliding customers.",
+      "Turned Paragliding Mantra into a clearer booking-oriented web experience for adventure and paragliding customers.",
     challenge:
-      "Adventure tourism sites often lose users through clutter, weak trust signals, and unclear next actions. This project needed a more decisive flow.",
+      "Adventure tourism sites often lose users through clutter, weak trust signals, and unclear next actions. Paragliding Mantra needed a more decisive web flow that could support organic discovery and move high-intent visitors toward enquiry.",
     approach: [
-      "Focused page sections around experience, credibility, destination value, and booking intent.",
+      "Focused page sections around paragliding experience, credibility, destination value, and booking intent.",
       "Used image-forward storytelling and simpler content grouping for faster scanning on mobile.",
-      "Prioritized high-intent actions such as pricing checks, inquiry, and lead capture."
+      "Prioritized high-intent actions such as pricing checks, inquiry, and lead capture while keeping the live project link as a clean portfolio reference."
     ],
     outcomes: [
-      "A stronger top-of-funnel presentation for first-time visitors evaluating adventure operators.",
+      "Created a stronger SEO-friendly case-study surface for Paragliding Mantra with a direct backlink to the live domain.",
       "Cleaner transitions from brand browsing to booking consideration.",
       "A more modern tourism web presence aligned with visual-first customer behavior."
     ],
-    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Lead generation UX"],
+    stack: ["Next.js", "Tailwind CSS", "SEO content structure", "Lead generation UX"],
     gallery: ["/assets/images/pm.png", "/assets/images/paraglidingkamshet.webp"]
+  },
+  {
+    slug: "sunrise-paragliding-kamshet",
+    title: "Sunrise Paragliding Kamshet",
+    kicker: "Kamshet adventure tourism SEO page",
+    category: "Adventure tourism website",
+    role: "Frontend developer and SEO-focused web developer",
+    year: "2025",
+    client: "Sunrise Paragliding Kamshet",
+    team: "Freelance delivery",
+    duration: "3 weeks",
+    image: "/assets/images/sunriseparaglidingkamshet.webp",
+    href: "https://sunriseparaglidingkamshet.com/",
+    embedUrl: "https://sunriseparaglidingkamshet.com/",
+    summary:
+      "A dedicated Kamshet paragliding website built to present adventure packages, trust signals, and booking intent clearly for search and mobile visitors.",
+    sourceNote:
+      "Project framing is based on the live Sunrise Paragliding Kamshet site, the portfolio asset, and the adventure tourism booking context.",
+    headline:
+      "Built a focused paragliding website for Kamshet visitors who need quick trust, clear package context, and a direct path to enquiry.",
+    challenge:
+      "Paragliding customers usually arrive with high intent but low patience. The website needed to answer safety, location, experience, and booking questions quickly while supporting organic discovery for Kamshet paragliding searches.",
+    approach: [
+      "Structured the page around Kamshet paragliding intent, using direct service positioning instead of generic adventure copy.",
+      "Kept calls to action close to package, location, and experience sections so mobile users could enquire without hunting.",
+      "Used image-led presentation to build confidence while keeping the content readable for search engines and first-time visitors."
+    ],
+    outcomes: [
+      "Created a dedicated SEO surface for Sunrise Paragliding Kamshet instead of relying only on social or marketplace discovery.",
+      "Improved the path from organic visit to enquiry with clearer location, activity, and booking context.",
+      "Added a relevant dofollow portfolio backlink from a case-study page to the live project."
+    ],
+    stack: ["Next.js", "Tailwind CSS", "Local SEO", "Lead generation UX"],
+    gallery: ["/assets/images/sunriseparaglidingkamshet.webp"]
+  },
+  {
+    slug: "paragliding-kamshet",
+    title: "Paragliding Kamshet",
+    kicker: "Adventure booking and local SEO site",
+    category: "Adventure tourism website",
+    role: "Frontend developer and conversion-focused web developer",
+    year: "2025",
+    client: "Paragliding Kamshet",
+    team: "Freelance delivery",
+    duration: "3 weeks",
+    image: "/assets/images/paraglidingkamshet.webp",
+    href: "https://paraglidingkamshet.in/",
+    embedUrl: "https://paraglidingkamshet.in/",
+    summary:
+      "A separate SEO-focused website for paragliding in Kamshet, designed around discovery, credibility, and fast enquiry conversion.",
+    sourceNote:
+      "Content is based on the provided live URL, existing project screenshot, and the site’s positioning around paragliding in Kamshet.",
+    headline:
+      "Created a search-friendly landing experience for Kamshet paragliding customers comparing operators and preparing to book.",
+    challenge:
+      "The project needed to stand on its own as a location-specific paragliding website, not just another portfolio thumbnail. It had to support search visibility while still feeling useful for real customers.",
+    approach: [
+      "Focused the page language on paragliding in Kamshet, giving search engines and users a clear topic match.",
+      "Designed the experience around trust, destination context, and booking readiness instead of broad adventure branding.",
+      "Kept the live project link visible as a clean dofollow reference from the case-study page."
+    ],
+    outcomes: [
+      "Added an independent portfolio case-study page for Paragliding Kamshet with a direct backlink to the live domain.",
+      "Separated this project from Sunrise Paragliding Kamshet so both brands can receive their own internal route and sitemap entry.",
+      "Improved SEO clarity by giving the project its own slug, title, metadata, image, and case-study content."
+    ],
+    stack: ["Next.js", "Tailwind CSS", "SEO content structure", "Responsive UI"],
+    gallery: ["/assets/images/paraglidingkamshet.webp", "/assets/images/sunriseparaglidingkamshet.webp"]
   },
   {
     slug: "eco-stays-villa-booking",
@@ -292,9 +360,9 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "lakeside-mantra",
     title: "Lakeside Mantra",
-    kicker: "Destination stay website",
-    category: "Hospitality web design",
-    role: "Frontend developer",
+    kicker: "Hospitality SEO and destination website",
+    category: "Hospitality website",
+    role: "Frontend developer and SEO-focused web developer",
     year: "2025",
     client: "Lakeside Mantra",
     team: "Freelance delivery",
@@ -303,24 +371,24 @@ export const caseStudies: CaseStudy[] = [
     href: "https://lakesidemantra.in",
     embedUrl: "https://lakesidemantra.in",
     summary:
-      "A destination-led hospitality website centered on visual appeal, property browsing, and inquiry flow.",
+      "A destination-led hospitality website for Lakeside Mantra, built around visual appeal, organic discovery, property browsing, and enquiry flow.",
     sourceNote:
-      "The live site could not be fully extracted in this environment; details are inferred from the link, screenshot, and category.",
+      "Project framing is based on the live Lakeside Mantra site, the existing portfolio screenshot, and its hospitality destination positioning.",
     headline:
-      "Created a scenic property website built to sell atmosphere first and booking intent second.",
+      "Created a scenic hospitality website that sells atmosphere, location appeal, and booking confidence in one focused journey.",
     challenge:
-      "Travel properties compete heavily on visual perception. The site had to communicate experience quality quickly before users compared options elsewhere.",
+      "Travel properties compete heavily on visual perception and search visibility. Lakeside Mantra needed a site that could feel premium, communicate destination value quickly, and still provide a clean path from discovery to enquiry.",
     approach: [
-      "Used large image surfaces and short copy blocks to keep attention on the destination and stay quality.",
+      "Used large image surfaces and short copy blocks to keep attention on the destination, stay quality, and visitor intent.",
       "Simplified information architecture to reduce distraction on mobile.",
-      "Kept inquiry and property browsing pathways close to the primary value proposition."
+      "Kept inquiry and property browsing pathways close to the primary value proposition while preserving a direct portfolio backlink to the live domain."
     ],
     outcomes: [
-      "A more premium-feeling digital touchpoint for a stay-focused brand.",
+      "Added a stronger SEO-friendly portfolio case-study page for Lakeside Mantra with a direct link to the live website.",
       "Higher consistency across the hospitality websites in the portfolio.",
       "Clearer conversion pathways for visitors arriving through discovery and social traffic."
     ],
-    stack: ["Next.js", "Tailwind CSS", "Responsive layout", "Visual storytelling"],
+    stack: ["Next.js", "Tailwind CSS", "Hospitality SEO", "Lead generation UX"],
     gallery: ["/assets/images/lakesidemantra.webp"]
   },
   {
@@ -395,9 +463,13 @@ export const caseStudies: CaseStudy[] = [
 
 export const featuredSlugs = [
   "astra-resort-kasauli",
+  "paragliding-mantra",
+  "sunrise-paragliding-kamshet",
+  "paragliding-kamshet",
   "police-department-websites",
   "eco-stays-villa-booking",
   "the-pine-paradise",
+  "lakeside-mantra",
   "lonavala-interiors"
 ];
 
