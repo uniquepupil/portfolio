@@ -123,8 +123,8 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "astra-resort-kasauli",
     title: "Astra Resort & Caffe Kasauli",
-    kicker: "Luxury hospitality website",
-    category: "Web experience",
+    kicker: "Hospitality commerce and loyalty platform",
+    category: "Full-stack hospitality platform",
     role: "Full-stack developer and frontend lead",
     year: "2025",
     client: "Astra Resort & Caffe Kasauli",
@@ -135,29 +135,32 @@ export const caseStudies: CaseStudy[] = [
     embedUrl: "https://astraresorts.com",
 
     summary:
-      "A conversion-led luxury hospitality website for a Kasauli resort, connecting room discovery, dining, weddings, events, destination storytelling, and direct booking actions in one responsive experience.",
+      "A full-stack luxury hospitality platform combining resort discovery, room commerce, Razorpay checkout, customer accounts, booking management, and the Astra Club loyalty experience.",
     sourceNote:
-      "Project details are based on the live Astra Resort & Caffe Kasauli website and the delivery context recorded in this portfolio. Property claims—including room types, amenities, capacities, rates, ratings, and travel times—belong to the client and may change on the live site.",
+      "Project details are based on the live Astra Resort & Caffe Kasauli website, Astra Club pages, public room storefront, and the delivery context recorded in this portfolio. Property claims, prices, discounts, membership rules, reward eligibility, and redemption limits belong to the client and may change on the live platform.",
     headline:
-      "Built a premium digital journey that presents Astra as a complete Kasauli destination—not simply another room-booking website.",
+      "Built a premium Kasauli hospitality ecosystem that connects brand storytelling with room sales, customer accounts, and loyalty-driven repeat visits.",
     challenge:
-      "Astra needed to communicate several hospitality offers without making the experience feel crowded: Classic Valley View rooms, Premium Pool & Valley rooms, Jacuzzi suites, an infinity pool with panoramic views, Celeste fine dining, the Nova bar, weddings, corporate events, and a pillar-less banquet hall for up to 300 guests. The website also had to help mobile visitors move quickly from inspiration to room comparison, availability search, WhatsApp enquiry, calling the front desk, directions, or direct reservation.",
+      "Astra needed one coherent experience for several business models at once: luxury room discovery, paid room packages, direct enquiries, restaurant and bar discovery, weddings, corporate events, and repeat-guest loyalty. The platform had to explain Classic Valley View, Premium Pool & Valley, and Jacuzzi stays; move customers into a secure cart and payment journey; and give returning guests a clear place to track bookings, membership progress, Astra Coins, wallet activity, expiry, and eligible checkout redemption—without letting transactional complexity dilute the premium resort brand.",
     approach: [
-      "Created an image-led opening experience around the Kasauli landscape, infinity pool, and 'Where luxury meets the clouds' positioning so the destination value is clear before room details appear.",
-      "Organized accommodation into three distinct room categories with concise amenity highlights, starting-rate context, and direct paths to detailed room information.",
-      "Separated Celeste fine dining and the Nova signature bar into clear hospitality stories while keeping them connected to the wider resort experience.",
-      "Presented weddings, corporate MICE, and the 300-guest pillar-less banquet facility as a dedicated revenue stream rather than a secondary amenity.",
-      "Placed availability search, reserve, WhatsApp, phone, enquiry, and map actions throughout the journey to support different booking preferences on desktop and mobile.",
-      "Used social proof, amenity summaries, galleries, location context, and proximity information to answer common trust questions before users contact the resort."
+      "Created an image-led opening experience around the Kasauli landscape, infinity pool, and 'Where luxury meets the clouds' positioning so destination value is established before commerce begins.",
+      "Structured room discovery around distinct accommodation and meal-plan products, exposing inclusions, pricing context, promotional discounts, and clear purchase actions.",
+      "Connected room products to a Razorpay-powered storefront with cart and checkout flows, giving customers a transactional path in addition to availability search, WhatsApp, phone, and enquiry options.",
+      "Built Astra Club around authenticated customer accounts that bring bookings, membership tier and progress, Astra Coins balance, wallet activity, and credit-expiry information into one place.",
+      "Designed eligible coin redemption into the customer room-booking checkout, showing usable rewards alongside the remaining monetary payment while keeping program rules and limits explicit.",
+      "Separated future café redemption from currently available benefits so customers are not promised functionality that has not launched; café redemption remains clearly labelled as a future release.",
+      "Presented Celeste dining, the Nova bar, weddings, corporate MICE, social celebrations, and the 300-guest pillar-less banquet facility as complementary revenue journeys within the same brand system.",
+      "Used responsive navigation, social proof, amenity summaries, galleries, location context, policies, and repeated conversion actions to support both first-time mobile visitors and returning members."
     ],
     outcomes: [
-      "A clearer premium position built around mountain views, signature suites, destination dining, and event infrastructure.",
-      "A more complete room-discovery journey that distinguishes Classic Valley View, Premium Pool & Valley, and Jacuzzi accommodation before enquiry.",
-      "Multiple conversion paths for high-intent visitors, including availability search, direct reservation, WhatsApp, phone, enquiry, and driving directions.",
+      "Extended Astra from a resort marketing website into a hospitality commerce platform with room products, cart behavior, checkout, customer authentication, and account-based booking context.",
+      "Created a repeat-guest loop through Astra Club membership progress, booking-earned Astra Coins, wallet visibility, expiry tracking, and eligible room-checkout redemption.",
+      "A more complete room-purchase journey that distinguishes accommodation categories, meal plans, inclusions, pricing, and promotions before payment.",
+      "Multiple conversion paths for different customer preferences, including storefront purchase, availability search, customer account, WhatsApp, phone, enquiry, and driving directions.",
       "Stronger visibility for non-room revenue opportunities such as weddings, banquets, corporate offsites, Celeste dining, and the Nova bar.",
-      "A responsive content structure that keeps major amenities and booking actions easy to scan for mobile-first travel visitors."
+      "Clear separation between live loyalty benefits and planned features, reducing ambiguity around Astra Coins and future café redemption."
     ],
-    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Room discovery", "Booking CTA flows", "WhatsApp enquiries", "Local SEO structure"],
+    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Razorpay Webstore", "E-commerce checkout", "Customer accounts", "Booking management", "Astra Coins wallet", "Loyalty redemption UX", "WhatsApp enquiries", "Local SEO structure"],
     gallery: ["/assets/images/astra-resorts.png"]
   },
   {
@@ -170,7 +173,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Paragliding Mantra",
     team: "Freelance delivery",
     duration: "3 weeks",
-    image: "/assets/images/pm.png",
+    image: "/assets/images/paragliding-mantra-live-2026.png",
     href: "https://www.paraglidingmantra.com",
     embedUrl: "https://www.paraglidingmantra.com",
     summary:
@@ -192,7 +195,7 @@ export const caseStudies: CaseStudy[] = [
       "A more modern tourism web presence aligned with visual-first customer behavior."
     ],
     stack: ["Next.js", "Tailwind CSS", "SEO content structure", "Lead generation UX"],
-    gallery: ["/assets/images/pm.png", "/assets/images/paraglidingkamshet.webp"]
+    gallery: ["/assets/images/paragliding-mantra-live-2026.png"]
   },
   {
     slug: "sunrise-paragliding-kamshet",
@@ -406,7 +409,7 @@ export const caseStudies: CaseStudy[] = [
     client: "The home dekor’s & Sk interior",
     team: "Built independently",
     duration: "Recent launch",
-    image: "/assets/images/lonavala-interiors.jpg",
+    image: "/assets/images/lonavala-interiors-live-2026.png",
     href: "https://www.lonavalainteriors.com",
     summary:
       "A conversion-focused interior design website for villas, bungalows, apartments, and commercial spaces in Lonavala, Kamshet, and Maval.",
@@ -427,7 +430,7 @@ export const caseStudies: CaseStudy[] = [
       "Gave the business a cleaner digital presence for both direct leads and future backlink growth."
     ],
     stack: ["Next.js", "SEO metadata", "Responsive UI", "Lead generation UX"],
-    gallery: ["/assets/images/lonavala-interiors.jpg"],
+    gallery: ["/assets/images/lonavala-interiors-live-2026.png"],
     embedUrl: "https://www.lonavalainteriors.com"
   },
   {
