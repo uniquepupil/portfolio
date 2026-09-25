@@ -469,8 +469,7 @@ export const featuredSlugs = [
   "police-department-websites",
   "eco-stays-villa-booking",
   "the-pine-paradise",
-  "lakeside-mantra",
-  "lonavala-interiors"
+  "lakeside-mantra"
 ];
 
 export const featuredCaseStudies = caseStudies.filter((project) =>

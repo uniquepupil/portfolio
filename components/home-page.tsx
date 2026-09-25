@@ -348,9 +348,17 @@ export function HomePage() {
               Case studies, not thumbnails.
             </h2>
           </div>
-          <p className="max-w-xl text-sm leading-7 theme-text-muted">
-            Each project below has its own page with role, problem framing, approach, outcomes, gallery, and live link.
-          </p>
+          <div className="max-w-xl">
+            <p className="text-sm leading-7 theme-text-muted">
+              Each project below has its own page with role, problem framing, approach, outcomes, gallery, and live link.
+            </p>
+            <Link
+              href="/projects"
+              className="mt-3 inline-flex rounded-full border border-[var(--border-strong)] px-4 py-2 text-sm theme-text-primary transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            >
+              View all projects
+            </Link>
+          </div>
         </div>
 
         <div className="grid gap-5 xl:grid-cols-2">

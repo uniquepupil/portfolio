@@ -5,6 +5,7 @@ import { caseStudies } from "@/lib/data";
 const siteUrl = "https://www.uniquepupil.in";
 const staticRoutes = [
   "",
+  "/projects",
   "/privacy-policy.html",
   "/terms-and-conditions.html",
   "/cancellation-and-refund.html",
