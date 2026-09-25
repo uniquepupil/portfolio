@@ -135,24 +135,29 @@ export const caseStudies: CaseStudy[] = [
     embedUrl: "https://astraresorts.com",
 
     summary:
-      "A premium hospitality site built around room discovery, event positioning, and direct booking intent.",
+      "A conversion-led luxury hospitality website for a Kasauli resort, connecting room discovery, dining, weddings, events, destination storytelling, and direct booking actions in one responsive experience.",
     sourceNote:
-      "Live site references luxury suites, infinity pool, dining, and events positioning; role and delivery framing are inferred from the portfolio context.",
+      "Project details are based on the live Astra Resort & Caffe Kasauli website and the delivery context recorded in this portfolio. Property claims—including room types, amenities, capacities, rates, ratings, and travel times—belong to the client and may change on the live site.",
     headline:
-      "Repositioned a Kasauli property as a high-end destination with a more persuasive digital experience.",
+      "Built a premium digital journey that presents Astra as a complete Kasauli destination—not simply another room-booking website.",
     challenge:
-      "The site needed to sell more than accommodation. It had to communicate luxury, amenities, weddings, dining, and direct booking confidence in one cohesive journey.",
+      "Astra needed to communicate several hospitality offers without making the experience feel crowded: Classic Valley View rooms, Premium Pool & Valley rooms, Jacuzzi suites, an infinity pool with panoramic views, Celeste fine dining, the Nova bar, weddings, corporate events, and a pillar-less banquet hall for up to 300 guests. The website also had to help mobile visitors move quickly from inspiration to room comparison, availability search, WhatsApp enquiry, calling the front desk, directions, or direct reservation.",
     approach: [
-      "Structured the homepage around premium proof points such as infinity pool, suites, dining, and event capacity.",
-      "Used large visual panels and section sequencing to make the property feel aspirational before users reached booking CTAs.",
-      "Balanced brand storytelling with conversion-heavy actions like reserve, enquiry, and room exploration."
+      "Created an image-led opening experience around the Kasauli landscape, infinity pool, and 'Where luxury meets the clouds' positioning so the destination value is clear before room details appear.",
+      "Organized accommodation into three distinct room categories with concise amenity highlights, starting-rate context, and direct paths to detailed room information.",
+      "Separated Celeste fine dining and the Nova signature bar into clear hospitality stories while keeping them connected to the wider resort experience.",
+      "Presented weddings, corporate MICE, and the 300-guest pillar-less banquet facility as a dedicated revenue stream rather than a secondary amenity.",
+      "Placed availability search, reserve, WhatsApp, phone, enquiry, and map actions throughout the journey to support different booking preferences on desktop and mobile.",
+      "Used social proof, amenity summaries, galleries, location context, and proximity information to answer common trust questions before users contact the resort."
     ],
     outcomes: [
-      "Sharper premium positioning for a hospitality brand competing on experience, not just room inventory.",
-      "More direct paths into booking, enquiry, room discovery, and event exploration.",
-      "A visually stronger brand surface for both mobile visitors and ad-driven traffic."
+      "A clearer premium position built around mountain views, signature suites, destination dining, and event infrastructure.",
+      "A more complete room-discovery journey that distinguishes Classic Valley View, Premium Pool & Valley, and Jacuzzi accommodation before enquiry.",
+      "Multiple conversion paths for high-intent visitors, including availability search, direct reservation, WhatsApp, phone, enquiry, and driving directions.",
+      "Stronger visibility for non-room revenue opportunities such as weddings, banquets, corporate offsites, Celeste dining, and the Nova bar.",
+      "A responsive content structure that keeps major amenities and booking actions easy to scan for mobile-first travel visitors."
     ],
-    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Booking CTA flows"],
+    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Room discovery", "Booking CTA flows", "WhatsApp enquiries", "Local SEO structure"],
     gallery: ["/assets/images/astra-resorts.png"]
   },
   {
@@ -199,7 +204,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Sunrise Paragliding Kamshet",
     team: "Freelance delivery",
     duration: "3 weeks",
-    image: "/assets/images/sunriseparaglidingkamshet.webp",
+    image: "/assets/images/sunrise-paragliding-live-2026.png",
     href: "https://sunriseparaglidingkamshet.com/",
     embedUrl: "https://sunriseparaglidingkamshet.com/",
     summary:
@@ -221,7 +226,7 @@ export const caseStudies: CaseStudy[] = [
       "Added a relevant dofollow portfolio backlink from a case-study page to the live project."
     ],
     stack: ["Next.js", "Tailwind CSS", "Local SEO", "Lead generation UX"],
-    gallery: ["/assets/images/sunriseparaglidingkamshet.webp"]
+    gallery: ["/assets/images/sunrise-paragliding-live-2026.png"]
   },
   {
     slug: "paragliding-kamshet",
@@ -233,7 +238,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Paragliding Kamshet",
     team: "Freelance delivery",
     duration: "3 weeks",
-    image: "/assets/images/paraglidingkamshet.webp",
+    image: "/assets/images/paragliding-kamshet-live-2026.png",
     href: "https://paraglidingkamshet.in/",
     embedUrl: "https://paraglidingkamshet.in/",
     summary:
@@ -255,7 +260,7 @@ export const caseStudies: CaseStudy[] = [
       "Improved SEO clarity by giving the project its own slug, title, metadata, image, and case-study content."
     ],
     stack: ["Next.js", "Tailwind CSS", "SEO content structure", "Responsive UI"],
-    gallery: ["/assets/images/paraglidingkamshet.webp", "/assets/images/sunriseparaglidingkamshet.webp"]
+    gallery: ["/assets/images/paragliding-kamshet-live-2026.png"]
   },
   {
     slug: "eco-stays-villa-booking",
@@ -464,12 +469,9 @@ export const caseStudies: CaseStudy[] = [
 export const featuredSlugs = [
   "astra-resort-kasauli",
   "paragliding-mantra",
-  "sunrise-paragliding-kamshet",
-  "paragliding-kamshet",
   "police-department-websites",
   "eco-stays-villa-booking",
-  "the-pine-paradise",
-  "lakeside-mantra"
+  "the-pine-paradise"
 ];
 
 export const featuredCaseStudies = caseStudies.filter((project) =>
